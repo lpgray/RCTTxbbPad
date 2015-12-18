@@ -1,5 +1,5 @@
 var React = require('react-native');
-var App = require('./app/views/App');
+var App = require('./app/App');
 var {AppRegistry} = React;
 
 var RCTTxbbPad = React.createClass({

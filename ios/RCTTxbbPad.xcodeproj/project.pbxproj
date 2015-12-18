@@ -21,6 +21,18 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		417090681C200F19002D6C8A /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */; };
+		417090751C2014BA002D6C8A /* RCTSwiper.m in Sources */ = {isa = PBXBuildFile; fileRef = 417090741C2014BA002D6C8A /* RCTSwiper.m */; };
+		4170907B1C201CEA002D6C8A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4170907A1C201CEA002D6C8A /* 1.jpg */; };
+		41E2ACBF1C1AD787005F5F26 /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E2ACBE1C1AD6FA005F5F26 /* libReactNativeIcons.a */; };
+		41F5F7BD1C2036C40061F04B /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7AD1C2036C40061F04B /* NSData+SDDataCache.m */; };
+		41F5F7BE1C2036C40061F04B /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B01C2036C40061F04B /* TAAbstractDotView.m */; };
+		41F5F7BF1C2036C40061F04B /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B21C2036C40061F04B /* TAAnimatedDotView.m */; };
+		41F5F7C01C2036C40061F04B /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B41C2036C40061F04B /* TADotView.m */; };
+		41F5F7C11C2036C40061F04B /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B61C2036C40061F04B /* TAPageControl.m */; };
+		41F5F7C21C2036C40061F04B /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B81C2036C40061F04B /* SDCollectionViewCell.m */; };
+		41F5F7C31C2036C40061F04B /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7BA1C2036C40061F04B /* SDCycleScrollView.m */; };
+		41F5F7C41C2036C40061F04B /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7BC1C2036C40061F04B /* UIView+SDExtension.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +100,13 @@
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+		41E2ACBD1C1AD6FA005F5F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E2ACB91C1AD6F9005F5F26 /* ReactNativeIcons.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2F5A3EB81ACDBF8000439386;
+			remoteInfo = ReactNativeIcons;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -124,6 +143,26 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RCTTxbbPad/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RCTTxbbPad/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		417090741C2014BA002D6C8A /* RCTSwiper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTSwiper.m; sourceTree = "<group>"; };
+		4170907A1C201CEA002D6C8A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		41E2ACB91C1AD6F9005F5F26 /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "../node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
+		41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = "../node_modules/react-native-icons/fonts/ionicons.ttf"; sourceTree = "<group>"; };
+		41F5F7AC1C2036C40061F04B /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
+		41F5F7AD1C2036C40061F04B /* NSData+SDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SDDataCache.m"; sourceTree = "<group>"; };
+		41F5F7AF1C2036C40061F04B /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		41F5F7B01C2036C40061F04B /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		41F5F7B11C2036C40061F04B /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		41F5F7B21C2036C40061F04B /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		41F5F7B31C2036C40061F04B /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		41F5F7B41C2036C40061F04B /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		41F5F7B51C2036C40061F04B /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		41F5F7B61C2036C40061F04B /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		41F5F7B71C2036C40061F04B /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		41F5F7B81C2036C40061F04B /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		41F5F7B91C2036C40061F04B /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		41F5F7BA1C2036C40061F04B /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		41F5F7BB1C2036C40061F04B /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		41F5F7BC1C2036C40061F04B /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E2ACBF1C1AD787005F5F26 /* libReactNativeIcons.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -232,6 +272,9 @@
 		13B07FAE1A68108700A75B9A /* RCTTxbbPad */ = {
 			isa = PBXGroup;
 			children = (
+				41F5F7C51C2037100061F04B /* Lib */,
+				417090791C201CC5002D6C8A /* Supporting Files */,
+				417090731C2013ED002D6C8A /* RCTViews */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -251,6 +294,69 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		417090731C2013ED002D6C8A /* RCTViews */ = {
+			isa = PBXGroup;
+			children = (
+				417090741C2014BA002D6C8A /* RCTSwiper.m */,
+			);
+			name = RCTViews;
+			sourceTree = "<group>";
+		};
+		417090791C201CC5002D6C8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4170907A1C201CEA002D6C8A /* 1.jpg */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41E2ACBA1C1AD6F9005F5F26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E2ACBE1C1AD6FA005F5F26 /* libReactNativeIcons.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41F5F7AB1C2036C40061F04B /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				41F5F7AC1C2036C40061F04B /* NSData+SDDataCache.h */,
+				41F5F7AD1C2036C40061F04B /* NSData+SDDataCache.m */,
+				41F5F7AE1C2036C40061F04B /* PageControl */,
+				41F5F7B71C2036C40061F04B /* SDCollectionViewCell.h */,
+				41F5F7B81C2036C40061F04B /* SDCollectionViewCell.m */,
+				41F5F7B91C2036C40061F04B /* SDCycleScrollView.h */,
+				41F5F7BA1C2036C40061F04B /* SDCycleScrollView.m */,
+				41F5F7BB1C2036C40061F04B /* UIView+SDExtension.h */,
+				41F5F7BC1C2036C40061F04B /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		41F5F7AE1C2036C40061F04B /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				41F5F7AF1C2036C40061F04B /* TAAbstractDotView.h */,
+				41F5F7B01C2036C40061F04B /* TAAbstractDotView.m */,
+				41F5F7B11C2036C40061F04B /* TAAnimatedDotView.h */,
+				41F5F7B21C2036C40061F04B /* TAAnimatedDotView.m */,
+				41F5F7B31C2036C40061F04B /* TADotView.h */,
+				41F5F7B41C2036C40061F04B /* TADotView.m */,
+				41F5F7B51C2036C40061F04B /* TAPageControl.h */,
+				41F5F7B61C2036C40061F04B /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		41F5F7C51C2037100061F04B /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				41F5F7AB1C2036C40061F04B /* SDCycleScrollView */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +368,8 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */,
+				41E2ACB91C1AD6F9005F5F26 /* ReactNativeIcons.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -414,6 +522,10 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = 41E2ACBA1C1AD6F9005F5F26 /* Products */;
+					ProjectRef = 41E2ACB91C1AD6F9005F5F26 /* ReactNativeIcons.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -480,6 +592,13 @@
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		41E2ACBE1C1AD6FA005F5F26 /* libReactNativeIcons.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeIcons.a;
+			remoteRef = 41E2ACBD1C1AD6FA005F5F26 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -508,6 +627,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417090681C200F19002D6C8A /* ionicons.ttf in Resources */,
+				4170907B1C201CEA002D6C8A /* 1.jpg in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -546,7 +667,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				41F5F7C01C2036C40061F04B /* TADotView.m in Sources */,
+				41F5F7BE1C2036C40061F04B /* TAAbstractDotView.m in Sources */,
+				41F5F7BF1C2036C40061F04B /* TAAnimatedDotView.m in Sources */,
+				41F5F7C41C2036C40061F04B /* UIView+SDExtension.m in Sources */,
+				417090751C2014BA002D6C8A /* RCTSwiper.m in Sources */,
+				41F5F7C11C2036C40061F04B /* TAPageControl.m in Sources */,
+				41F5F7BD1C2036C40061F04B /* NSData+SDDataCache.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				41F5F7C21C2036C40061F04B /* SDCollectionViewCell.m in Sources */,
+				41F5F7C31C2036C40061F04B /* SDCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
