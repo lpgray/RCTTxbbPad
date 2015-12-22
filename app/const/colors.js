@@ -8,6 +8,7 @@ module.exports = {
   bdColor2: '#eee',
   bg: '#e9e9e9',
   lightBdColor: '#eee',
-  touched: '#fff',
-  orange: '#fd6e41'
+  touched: '#fcfcfc',
+  orange: '#fd6e41',
+  red: '#f55'
 };

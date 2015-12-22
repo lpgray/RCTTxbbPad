@@ -2,25 +2,28 @@ var React = require('react-native');
 var {View, Text, StyleSheet, TouchableHighlight, Image, TouchableHighlight} = React;
 var Colors = require('../const/colors');
 
-var MainNav = React.createClass({
-  getInitialState() {
-    return {
-      data : this.props.navData || [{}, {}, {}, {}]
-    };
+var HomeNav = React.createClass({
+
+  getInitialState(){
+    return {data: []};
+  },
+
+  componentWillReceiveProps: function(nextProps) {
+    this.setState({data: nextProps.data});
   },
 
   render() {
     var navItemArr = this.state.data;
-    var firstGroup = navItemArr.splice(0,4);
+    var firstGroup = navItemArr.slice(0,4);
     var lastGroup = [];
-    if (navItemArr.length) {
-      for (let i = navItemArr.length ; i<4 ; i++) {
-        navItemArr.push({});
+    if (navItemArr.length > 4) {
+      lastGroup = navItemArr.slice(4, navItemArr.length);
+      for (var i = lastGroup.length ; i < 4 ; i++) {
+        lastGroup.push({});
       }
-      lastGroup = navItemArr;
     }
     return (
-      <View>
+      <View style={{paddingVertical: 10}}>
         <View style={styles.ctn}>
           {
             firstGroup.map((item, i) => {
@@ -62,19 +65,20 @@ var styles = StyleSheet.create({
   },
   menuItem: {
     flex: 1,
-    padding: 5
+    height: 66,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   menuItemText: {
-    textAlign: 'center',
-    color: Colors.gray
+    color: Colors.gray,
   },
   menuItemImg: {
     width: 44,
     height: 44,
     borderRadius: 22,
-    alignSelf: 'center',
-    marginBottom: 10
+    marginRight: 10
   }
 });
 
-module.exports = MainNav;
+module.exports = HomeNav;

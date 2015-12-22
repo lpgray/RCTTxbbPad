@@ -3,7 +3,12 @@ var Colors = require('../const/colors');
 var {View, Text, StyleSheet, TouchableHighlight, TextInput} = React;
 var {Icon} = require('react-native-icons');
 
-var NavBar = React.createClass({
+var HomeNavBar = React.createClass({
+
+  _onTabPressed(type) {
+    this.props.onTabPressed(type);
+  },
+
   render() {
     return (
       <View style={styles.navbar}>
@@ -37,7 +42,7 @@ var NavBar = React.createClass({
               <Text style={styles.iconText}>消息</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight underlayColor={Colors.touched}>
+          <TouchableHighlight onPress={this._onTabPressed.bind(this, 'UserCenter')} underlayColor={Colors.touched}>
             <View style={styles.iconWrap}>
               <Icon name='ion|ios-person-outline' size={30} color={Colors.main} style={styles.icon}/>
               <Text style={styles.iconText}>我的</Text>
@@ -52,11 +57,11 @@ var NavBar = React.createClass({
 var styles = StyleSheet.create({
   navbar : {
     backgroundColor: Colors.wit,
-    flex: 1,
     borderColor: Colors.bdColor,
     borderBottomWidth: 1,
     flexDirection: 'row',
-    paddingTop: 10,
+    height: 76,
+    paddingTop: 22
   },
   profile: {
     width: 200
@@ -64,7 +69,7 @@ var styles = StyleSheet.create({
   linkWrap: {
     paddingLeft: 15,
     paddingRight: 15,
-    height: 66,
+    height: 48,
     flexDirection: 'row',
     alignItems: 'center'
   },
@@ -78,7 +83,7 @@ var styles = StyleSheet.create({
     paddingRight: 30
   },
   input: {
-    height: 28,
+    height: 30,
     borderColor: '#e3e3e3',
     backgroundColor: '#eee',
     borderRadius: 14,
@@ -86,7 +91,7 @@ var styles = StyleSheet.create({
     paddingRight: 10,
     fontSize: 12,
     borderWidth: 1,
-    marginTop: 20
+    marginTop: 8
   },
   navWrap: {
     flexDirection: 'row',
@@ -112,4 +117,4 @@ var styles = StyleSheet.create({
   }
 });
 
-module.exports = NavBar;
+module.exports = HomeNavBar;

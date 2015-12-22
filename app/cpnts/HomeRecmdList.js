@@ -3,17 +3,19 @@ var {View, Text, StyleSheet, Image, TouchableHighlight} = React;
 var Colors = require('../const/colors');
 
 var App = React.createClass({
-  getInitialState() {
-    return {
-      data : this.props.data || []
-    };
+  getInitialState(){
+    return {data: []};
+  },
+
+  componentWillReceiveProps: function(nextProps) {
+    this.setState({data: nextProps.data});
   },
 
   render() {
     return (
       <View style={styles.ctn}>
         {
-          this.state.data.act.id ?
+          (this.state.data.act && this.state.data.act.id) ?
           (<TouchableHighlight style={styles.itemWrap} underlayColor={Colors.touched}>
             <View style={styles.item}>
               <View style={styles.titleWrap}>
@@ -35,7 +37,7 @@ var App = React.createClass({
         }
 
         {
-          this.state.data.gar.id ?
+          (this.state.data.gar && this.state.data.gar.id) ?
           (<TouchableHighlight style={styles.itemWrap} underlayColor={Colors.touched}>
             <View style={styles.item}>
               <View style={styles.titleWrap}>
@@ -57,7 +59,7 @@ var App = React.createClass({
         }
 
         {
-          this.state.data.amz.id ?
+          (this.state.data.amz && this.state.data.amz.id) ?
           (<TouchableHighlight style={styles.itemWrap} underlayColor={Colors.touched}>
             <View style={styles.item}>
               <View style={styles.titleWrap}>
@@ -97,7 +99,6 @@ var styles = StyleSheet.create({
   item: {
     flex: 1,
     backgroundColor: Colors.wit,
-    borderRadius: 4,
     borderColor: Colors.bdColor,
     borderWidth: 1
   },
@@ -105,11 +106,11 @@ var styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: Colors.bdColor2,
     backgroundColor: 'transparent',
-    height: 50
+    height: 30
   },
   titleImg: {
     backgroundColor: 'transparent',
-    marginTop: -8
+    marginTop: -6
   },
   row: {
     flexDirection: 'row',

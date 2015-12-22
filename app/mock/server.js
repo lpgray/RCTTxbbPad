@@ -167,7 +167,7 @@ var pts = [
   }
 ];
 
-var nav = [
+var navData = [
   {
     img: 'http://7mno5a.com1.z0.glb.clouddn.com/f/m/service/2_home_ic_nearby.png',
     title: '附近兼职',
@@ -240,11 +240,19 @@ var recmdData = {
   }
 };
 
+var userData = {
+  name : '5号楼的叔叔张',
+  mobile: '18260008278',
+  levelText: '青铜',
+  resumePercent: '94%',
+  avatar: 'http://ww3.sinaimg.cn/large/8df27f17gw1ez8ciyd5luj20b40b475v.jpg'
+};
+
 module.exports = {
-  getParttimes(callback){
-    callback(null, parttimes);
-  },
   getHomePageData(callback) {
-    callback(null, {nav, pts, recmdData});
+    callback(null, {pts, recmdData, navData});
+  },
+  getUserPageData(callback) {
+    callback(null, {userData});
   }
 };

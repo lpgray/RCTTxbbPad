@@ -1,14 +1,14 @@
 var React = require('react-native');
 var {View, Text, StyleSheet, ScrollView, requireNativeComponent} = React;
-var NavBar = require('../cpnts/NavBar');
+var NavBar = require('../cpnts/HomeNavBar');
 var ParttimeList = require('../cpnts/ParttimeList');
-var MainNav = require('../cpnts/MainNav');
+var HomeNav = require('../cpnts/HomeNav');
 var Colors = require('../const/colors');
 var Server = require('../mock/server');
 var HomeRecmdList = require('../cpnts/HomeRecmdList');
+var UserCenter = require('./UserCenter');
 
 var RCTSwiper = requireNativeComponent('RCTSwiper', null);
-
 
 var Home = React.createClass({
   getInitialState() {
@@ -17,26 +17,36 @@ var Home = React.createClass({
     };
   },
 
-  componentWillMount() {
+  componentDidMount() {
     var _this = this;
     Server.getHomePageData(function(err, data){
       _this.setState({data});
     });
   },
 
+  _onTabPressed(type) {
+    if (type === 'UserCenter') {
+      this.props.navigator.push({
+        title : '个人中心',
+        component: UserCenter
+      });
+    }
+  },
+
   render() {
     return (
       <View style={styles.ctn}>
-        <View>
-          <NavBar />
-        </View>
-        <ScrollView style={styles.scrollView}>
+        <NavBar onTabPressed={this._onTabPressed}/>
+        <ScrollView
+          contentInset={{top:0}}
+          automaticallyAdjustContentInsets={false}
+          contentContainerStyle={styles.scrollView}>
           <View style={styles.swiper}>
             <Text>图片轮播区，待实现</Text>
           </View>
 
           <View style={styles.mainNavWrap}>
-            <MainNav navData={this.state.data.nav}/>
+            <HomeNav data={this.state.data.navData}/>
           </View>
 
           <View style={styles.recmdListWrap}>
@@ -57,12 +67,11 @@ var Home = React.createClass({
 
 var styles = StyleSheet.create({
   ctn : {
-    backgroundColor: Colors.bg,
+    backgroundColor: Colors.wit,
     flex: 1
   },
   mainNavWrap: {
     backgroundColor: Colors.wit,
-    padding: 15,
     borderBottomColor: Colors.bdColor,
     borderBottomWidth: 1
   },

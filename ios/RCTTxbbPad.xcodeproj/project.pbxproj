@@ -23,7 +23,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		417090681C200F19002D6C8A /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */; };
 		417090751C2014BA002D6C8A /* RCTSwiper.m in Sources */ = {isa = PBXBuildFile; fileRef = 417090741C2014BA002D6C8A /* RCTSwiper.m */; };
-		4170907B1C201CEA002D6C8A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4170907A1C201CEA002D6C8A /* 1.jpg */; };
+		41BB1F531C25115800A6CBDA /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 41BB1F521C25115800A6CBDA /* main.jsbundle */; };
 		41E2ACBF1C1AD787005F5F26 /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E2ACBE1C1AD6FA005F5F26 /* libReactNativeIcons.a */; };
 		41F5F7BD1C2036C40061F04B /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7AD1C2036C40061F04B /* NSData+SDDataCache.m */; };
 		41F5F7BE1C2036C40061F04B /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B01C2036C40061F04B /* TAAbstractDotView.m */; };
@@ -124,7 +124,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
 		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
@@ -135,7 +134,7 @@
 		00E356F21AD99517003FC87E /* RCTTxbbPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTTxbbPadTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RCTTxbbPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCTTxbbPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* 同学帮帮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "同学帮帮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RCTTxbbPad/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RCTTxbbPad/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -144,7 +143,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RCTTxbbPad/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		417090741C2014BA002D6C8A /* RCTSwiper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTSwiper.m; sourceTree = "<group>"; };
-		4170907A1C201CEA002D6C8A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		41BB1F521C25115800A6CBDA /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		41E2ACB91C1AD6F9005F5F26 /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "../node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
 		41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = "../node_modules/react-native-icons/fonts/ionicons.ttf"; sourceTree = "<group>"; };
 		41F5F7AC1C2036C40061F04B /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
@@ -275,7 +274,6 @@
 				41F5F7C51C2037100061F04B /* Lib */,
 				417090791C201CC5002D6C8A /* Supporting Files */,
 				417090731C2013ED002D6C8A /* RCTViews */,
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -305,7 +303,6 @@
 		417090791C201CC5002D6C8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4170907A1C201CEA002D6C8A /* 1.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -395,6 +392,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				41BB1F521C25115800A6CBDA /* main.jsbundle */,
 				13B07FAE1A68108700A75B9A /* RCTTxbbPad */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RCTTxbbPadTests */,
@@ -407,7 +405,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RCTTxbbPad.app */,
+				13B07F961A680F5B00A75B9A /* 同学帮帮.app */,
 				00E356EE1AD99517003FC87E /* RCTTxbbPadTests.xctest */,
 			);
 			name = Products;
@@ -449,7 +447,7 @@
 			);
 			name = RCTTxbbPad;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* RCTTxbbPad.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* 同学帮帮.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -628,9 +626,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				417090681C200F19002D6C8A /* ionicons.ttf in Resources */,
-				4170907B1C201CEA002D6C8A /* 1.jpg in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				41BB1F531C25115800A6CBDA /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,10 +752,11 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = RCTTxbbPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RCTTxbbPad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.txbb.RCTTxbbPad;
+				PRODUCT_NAME = "同学帮帮";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -773,10 +772,11 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = RCTTxbbPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RCTTxbbPad;
+				PRODUCT_BUNDLE_IDENTIFIER = com.txbb.RCTTxbbPad;
+				PRODUCT_NAME = "同学帮帮";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
