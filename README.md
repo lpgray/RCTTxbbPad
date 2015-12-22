@@ -1,2 +1,2 @@
 # RCTTxbbPad
-An txbb.com application for iPad based on the React Native.
+A txbb.com application for iPad based on React Native, this project is just for fun.
