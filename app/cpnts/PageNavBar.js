@@ -33,11 +33,13 @@ var styles = StyleSheet.create({
     borderColor: Colors.bdColor,
     borderBottomWidth: 1,
     flexDirection: 'row',
-    height: 76,
-    paddingTop: 22
+    height: 86,
+    paddingTop: 22,
+    justifyContent: 'center'
   },
   left: {
-    width: 200
+    width: 200,
+    justifyContent: 'center'
   },
   right: {
     width: 200
@@ -57,9 +59,6 @@ var styles = StyleSheet.create({
   },
   middle: {
     flex: 1,
-    paddingLeft: 30,
-    paddingRight: 30,
-    height: 48,
     justifyContent: 'center'
   },
   title: {

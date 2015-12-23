@@ -1,5 +1,5 @@
 var React = require('react-native');
-var {View, Text, StyleSheet, ScrollView, requireNativeComponent} = React;
+var {View, Text, StyleSheet, ScrollView, requireNativeComponent, TouchableHighlight} = React;
 var NavBar = require('../cpnts/HomeNavBar');
 var ParttimeList = require('../cpnts/ParttimeList');
 var HomeNav = require('../cpnts/HomeNav');
@@ -7,14 +7,11 @@ var Colors = require('../const/colors');
 var Server = require('../mock/server');
 var HomeRecmdList = require('../cpnts/HomeRecmdList');
 var UserCenter = require('./UserCenter');
-
-var RCTSwiper = requireNativeComponent('RCTSwiper', null);
+var Login = require('./Login');
 
 var Home = React.createClass({
   getInitialState() {
-    return {
-      data : {}
-    };
+    return {data : {}};
   },
 
   componentDidMount() {
@@ -24,19 +21,10 @@ var Home = React.createClass({
     });
   },
 
-  _onTabPressed(type) {
-    if (type === 'UserCenter') {
-      this.props.navigator.push({
-        title : '个人中心',
-        component: UserCenter
-      });
-    }
-  },
-
   render() {
     return (
       <View style={styles.ctn}>
-        <NavBar onTabPressed={this._onTabPressed}/>
+        <NavBar navigator={this.props.navigator}/>
         <ScrollView
           contentInset={{top:0}}
           automaticallyAdjustContentInsets={false}

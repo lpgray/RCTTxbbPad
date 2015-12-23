@@ -23,7 +23,6 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		417090681C200F19002D6C8A /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */; };
 		417090751C2014BA002D6C8A /* RCTSwiper.m in Sources */ = {isa = PBXBuildFile; fileRef = 417090741C2014BA002D6C8A /* RCTSwiper.m */; };
-		41BB1F531C25115800A6CBDA /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 41BB1F521C25115800A6CBDA /* main.jsbundle */; };
 		41E2ACBF1C1AD787005F5F26 /* libReactNativeIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E2ACBE1C1AD6FA005F5F26 /* libReactNativeIcons.a */; };
 		41F5F7BD1C2036C40061F04B /* NSData+SDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7AD1C2036C40061F04B /* NSData+SDDataCache.m */; };
 		41F5F7BE1C2036C40061F04B /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F5F7B01C2036C40061F04B /* TAAbstractDotView.m */; };
@@ -143,7 +142,6 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RCTTxbbPad/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		417090741C2014BA002D6C8A /* RCTSwiper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTSwiper.m; sourceTree = "<group>"; };
-		41BB1F521C25115800A6CBDA /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		41E2ACB91C1AD6F9005F5F26 /* ReactNativeIcons.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeIcons.xcodeproj; path = "../node_modules/react-native-icons/ios/ReactNativeIcons.xcodeproj"; sourceTree = "<group>"; };
 		41E2ACC01C1AD82D005F5F26 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ionicons.ttf; path = "../node_modules/react-native-icons/fonts/ionicons.ttf"; sourceTree = "<group>"; };
 		41F5F7AC1C2036C40061F04B /* NSData+SDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SDDataCache.h"; sourceTree = "<group>"; };
@@ -392,7 +390,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				41BB1F521C25115800A6CBDA /* main.jsbundle */,
 				13B07FAE1A68108700A75B9A /* RCTTxbbPad */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RCTTxbbPadTests */,
@@ -628,7 +625,6 @@
 				417090681C200F19002D6C8A /* ionicons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				41BB1F531C25115800A6CBDA /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

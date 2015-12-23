@@ -106,7 +106,7 @@ var styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: Colors.bdColor2,
     backgroundColor: 'transparent',
-    height: 30
+    height: 36
   },
   titleImg: {
     backgroundColor: 'transparent',
