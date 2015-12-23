@@ -17,43 +17,37 @@ var PtItem = React.createClass({
             <View style={styles.cell1}>
               <Text numberOfLines={1} style={styles.ptTitle}>{item.title}</Text>
               <View style={styles.ptInfoGroup}>
-                <Icon name='ion|bag' size={16} color={'#ccc'} style={styles.icon}/>
+                <Icon name='ion|bag' size={16} color={Colors.lightGray} style={styles.icon}/>
                 <Text style={styles.ptInfoWords}>{item.company}</Text>
               </View>
               <View style={{flexDirection: 'row'}}>
                 <View style={styles.ptInfoGroup}>
-                  <Icon name='ion|clock' size={16} color={'#ccc'} style={styles.icon}/>
+                  <Icon name='ion|clock' size={16} color={Colors.lightGray} style={styles.icon}/>
                   <Text style={styles.ptInfoWords}>{item.dateText}</Text>
                 </View>
                 <View style={styles.ptInfoGroup}>
-                  <Icon name='ion|ios-location' size={16} color={'#ccc'} style={[styles.icon, {width: 10,marginLeft: 10}]}/>
+                  <Icon name='ion|ios-location' size={16} color={Colors.lightGray} style={[styles.icon, {width: 10,marginLeft: 10}]}/>
                   <Text style={styles.ptInfoWords}>{item.distance}</Text>
                 </View>
               </View>
             </View>
           </View>
-          <View style={[styles.row, {marginTop: 2}]}>
+          <View style={[styles.row, {marginTop: 5}]}>
             <View style={styles.cell0}>
               <Text style={styles.ptSalary}>{item.salary/100}{item.salaryUnit}</Text>
             </View>
             <View style={[styles.cell1, styles.tagsWrap]}>
               {
-                item.recmd ? <Text style={[styles.badge, styles.recmd]}>保</Text> : null
+                item.recmd ? <View style={[styles.badge, {backgroundColor: '#9ACF00'}]}><Text style={styles.badgeText}>保</Text></View> : null
               }
               {
-                item.good ? <Text style={[styles.badge, styles.good]}>精</Text> : null
+                item.good ? <View style={[styles.badge, {backgroundColor: '#ffba18'}]}><Text style={styles.badgeText}>精</Text></View> : null
               }
               {
                 item.tags.map(function(txt, index){
-                  return <Text key={index} style={styles.tag}>{txt}</Text>;
+                  return <View key={index} style={styles.tag}><Text style={styles.tagText}>{txt}</Text></View>;
                 })
               }
-            </View>
-          </View>
-          <View style={styles.row}>
-            <View style={styles.cell0}></View>
-            <View style={styles.cell1}>
-
             </View>
           </View>
         </View>
@@ -109,7 +103,8 @@ var styles = StyleSheet.create({
   ptItem: {
     padding: 14,
     borderBottomWidth: 1,
-    borderColor: '#f5f5f5'
+    borderColor: '#f5f5f5',
+    flex: 1
   },
   cell0: {
     alignItems: 'center',
@@ -121,64 +116,64 @@ var styles = StyleSheet.create({
   },
   ptSalary: {
     fontSize: 14,
+    paddingVertical: 3,
     color: Colors.orange
   },
   ptTitle: {
     fontSize: 16,
     color: Colors.blk,
-    lineHeight: 18,
-    marginBottom: 5
+    height: 20
   },
   ptInfoGroup: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginTop: 2,
+    height: 20
   },
   ptInfoWords: {
     fontSize: 14,
-    color: Colors.lightGray
+    color: Colors.gray
   },
   tagsWrap: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     overflow: 'hidden',
-    alignItems: 'center'
+    height: 22
   },
   tag: {
-    fontSize: 12,
-    color: Colors.orange,
     borderWidth: 1,
-    padding: 1,
     borderRadius: 2,
     borderColor: Colors.orange,
-    textAlign: 'center',
-    height: 16,
-    lineHeight: 14,
-    marginRight: 4
+    height: 20,
+    justifyContent: 'center',
+    marginRight: 4,
+    marginBottom: 4
+  },
+  tagText: {
+    color: Colors.orange,
+    marginHorizontal: 2
   },
   logo: {
     flex: 1,
     borderRadius: 4,
     borderColor: '#f5f5f5',
     borderWidth: 1,
-    height: 66,
-    width: 66
+    height: 60,
+    width: 60
   },
   badge: {
-    width: 16,
-    height: 16,
     borderRadius: 2,
-    color: '#fff',
-    backgroundColor: '#ddd',
+    backgroundColor: Colors.gray,
+    height: 20,
+    width: 20,
+    justifyContent: 'center',
+    marginRight: 4,
+    marginBottom: 4
+  },
+  badgeText: {
+    color: Colors.wit,
     textAlign: 'center',
-    lineHeight: 14,
-    fontSize: 12,
-    marginRight: 4
-  },
-  recmd: {
-    backgroundColor: '#9ACF00'
-  },
-  good: {
-    backgroundColor: '#ffba18'
+    fontSize: 14
   },
   viewMoreWrap: {
     backgroundColor: Colors.wit

@@ -84,7 +84,7 @@ var HomeNavBar = React.createClass({
 var styles = StyleSheet.create({
   navbar : {
     backgroundColor: Colors.wit,
-    borderColor: Colors.bdColor,
+    borderColor: Colors.bdColor2,
     borderBottomWidth: 1,
     flexDirection: 'row',
     height: 86,
@@ -99,10 +99,10 @@ var styles = StyleSheet.create({
   linkWrap: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 10
+    paddingHorizontal: 15
   },
   linkText: {
-    fontSize: 16,
+    fontSize: 18,
     color: Colors.main
   },
   searchWrap: {
@@ -131,7 +131,7 @@ var styles = StyleSheet.create({
     height: 40
   },
   iconText: {
-    fontSize: 14,
+    fontSize: 16,
     textAlign: 'center',
     width: 40,
     color: Colors.gray

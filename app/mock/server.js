@@ -50,10 +50,9 @@ var pts = [
     distance: '<1km',
     salary: '13000',
     salaryUnit: '元/月',
-    recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 4,
@@ -64,10 +63,9 @@ var pts = [
     distance: '<1km',
     salary: '10000',
     salaryUnit: '元/月',
-    recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 5,
@@ -78,10 +76,9 @@ var pts = [
     distance: '<1km',
     salary: '14000',
     salaryUnit: '元/月',
-    recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 6,
@@ -94,7 +91,7 @@ var pts = [
     salaryUnit: '元/月',
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1', '经验+1']
+    tags: []
   },
   {
     id: 7,
@@ -105,10 +102,9 @@ var pts = [
     distance: '<1km',
     salary: '9000',
     salaryUnit: '元/月',
-    recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 8,
@@ -119,10 +115,9 @@ var pts = [
     distance: '<1km',
     salary: '12000',
     salaryUnit: '元/月',
-    recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 9,
@@ -133,10 +128,9 @@ var pts = [
     distance: '<1km',
     salary: '13000',
     salaryUnit: '元/月',
-    recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 10,
@@ -147,9 +141,8 @@ var pts = [
     distance: '<1km',
     salary: '10000',
     salaryUnit: '元/月',
-    rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   },
   {
     id: 11,
@@ -163,7 +156,7 @@ var pts = [
     recmd: 1,
     rates: 5,
     extra: '适合认真负责，服从管理的新手',
-    tags: ['态度+1']
+    tags: []
   }
 ];
 

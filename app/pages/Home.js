@@ -6,8 +6,6 @@ var HomeNav = require('../cpnts/HomeNav');
 var Colors = require('../const/colors');
 var Server = require('../mock/server');
 var HomeRecmdList = require('../cpnts/HomeRecmdList');
-var UserCenter = require('./UserCenter');
-var Login = require('./Login');
 
 var Home = React.createClass({
   getInitialState() {
